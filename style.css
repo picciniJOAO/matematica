@@ -52,17 +52,18 @@ body {
 }
 
 .botao:first-child {
-  border-radius: 40px 40px 0 0;
+  border-radius: 40px 0 0 0;
 }
 
 .botoes {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  /* Código omitido */
-
+    .botoes {
+      display: flex;
+    }
   .botao:last-child {
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 40px 0px 0px;
   }
 }
 .ativo {
@@ -72,7 +73,7 @@ body {
 .abas-textos {
   background-color: var(--texto-fundo);
   padding: 40px;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0px 0px 40px 40px;
 }
 .botao.ativo {
   background-color: var(--botao-ativo);
